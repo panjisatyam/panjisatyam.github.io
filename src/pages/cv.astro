@@ -1,0 +1,98 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Tentang Diri Saya</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    Saya adalah mahasiswa Geografi di Universitas Lambung Mangkurat, angkatan 2021, 
+    dengan pengalaman kaya di bidang Sistem Informasi Geografis. 
+    Sebagai surveyor dan anggota tim pemetaan, saya telah memberikan kontribusi penting dalam proyek pembangunan desa dan penelitian pemerintah. 
+    Dengan kemampuan analisis, kepemimpinan, dan pemecahan masalah yang luar biasa, saya berambisi untuk terus berkembang dan menonjol dalam karier profesional saya. 
+    Saya adalah pemikir kritis yang efisien, mampu bekerja baik secara tim maupun individu, dengan inisiatif tinggi dan adaptabilitas.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Pendidikan</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Program Studi Geografi"
+      subtitle="2021 - 2025 di Universitas Lambung Mangkurat, Banjarmasin, Indonesia"
+    />
+    <TimeLineElement
+      title="Pendidikan Menengah Atas Jurusan MIPA"
+      subtitle="2018 to 2021 at SMAN 2 Banjarmasin, Banjarmasin, Indonesia"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Pengalaman</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Anggota Tim Surveyor"
+      subtitle="2 September - 9 November 2023 di Bappeda Litbang, Banjarmasin, Indonesia"
+    >
+    Sebagai bagian dari komitmen saya terhadap pembangunan sosial, saya telah melaksanakan survei lapangan yang mendalam dan pendataan mengenai kemiskinan ekstrem, termasuk geotagging Badan Nasional Bantuan Bencana dan Aksi (BNBA). Kegiatan ini melibatkan pengumpulan data yang akurat dan analisis kondisi lapangan, memberikan wawasan penting untuk strategi penanggulangan kemiskinan. Selain itu, saya juga terlibat dalam survei lapangan untuk pembaruan data nama rupabumi (toponimi) di Kota Banjarmasin, sebuah proyek yang memerlukan ketelitian tinggi dan pemahaman mendalam tentang geografi lokal. Melalui kedua proyek ini, saya telah mengembangkan kemampuan untuk bekerja di lapangan dengan efisien, mengumpulkan dan mengelola data secara sistematis, serta menyediakan informasi yang krusial bagi pengambilan kebijakan.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Asisten Peneliti Pemetaan"
+      subtitle="5 April - 12 Agustus 2023 di Universitas Lambung Mangkurat dan Kotabaru, Kalimantan Selatan, Indonesia"
+    >
+    Saya telah membantu menyelesaikan pengolahan peta dengan aplikasi ArcGIS bersama tim, menunjukkan kerja sama yang baik dan terstruktur. Selain itu, saya juga melakukan survei lapangan untuk GeoTagging fasilitas di desa yang mencakup empat kecamatan, menggunakan Avenza Map, menunjukkan kemampuan saya dalam pengumpulan data dan pemanfaatan teknologi GIS secara efektif.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Anggota Kuliah Kerja Lapangan Geoteknik"
+      subtitle="11 - 12 Juni 2023 di Desa Tabanio, Kalimantan Selatan, Indonesia"
+    >
+    Saya berkolaborasi dengan tim untuk menyelesaikan pengolahan Peta Administrasi Desa Tabanio di Kecamatan Takisung, serta Peta Kerja Kabupaten Tanah Laut, menunjukkan kerjasama tim yang efektif dan hasil yang rapi.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Workshop Penggunaan GPS Geodetik & Total Station untuk Survey Pemetaan"
+      subtitle="20 - 21 Mei 2023 di ATR/BPN Kalsel, Banjarbaru, Indonesia"
+    >
+    Selama Workshop, saya mempelajari berbagai teknik pengukuran lahan, termasuk penggunaan meteran untuk pengukuran dasar, waterpass untuk pengukuran melintang dan memanjang, serta GPS Station dan GPS Rover untuk lokasi yang lebih akurat. Saya juga menguasai pengukuran poligon, baik terbuka maupun tertutup, dengan menggunakan theodolit, memperkuat keterampilan saya dalam survei geografis.
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <div>Penggunaan GPS Geodetik dan Total Station</div>
+      <img src="/public/sertifikat-4.jpg" alt="ArcGIS" class="inline-block w- 60 h-80 mr-2 rounded">
+    </li>
+    <li>
+      <div>Penggunaan Alat GPS Echosounder</div>
+      <img src="/public/sertifikat-3.jpg" alt="ArcGIS" class="inline-block w- 60 h-80 mr-2 rounded">
+    </li>
+    <li>
+      <div>Pelatihan Sains Informasi Geospasial I</div>
+      <img src="/public/sertifikat-2.jpg" alt="ArcGIS" class="inline-block w- 60 h-80 mr-2 rounded">
+    </li>
+    <li>
+      <div>Pelatihan Sains Informasi Geospasial II</div>
+      <img src="/public/sertifikat-1.jpg" alt="ArcGIS" class="inline-block w- 60 h-80 mr-2 rounded">
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>ArcGIS</li>
+    <li>Desain Grafis</li>
+    <li>Microsoft Office</li>
+    <li>Figma</li>
+  </ul>
+</BaseLayout>
